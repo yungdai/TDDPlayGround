@@ -14,6 +14,10 @@
 		9F24F28A2119FE9700D6815C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F24F2882119FE9700D6815C /* LaunchScreen.storyboard */; };
 		9F24F2952119FE9700D6815C /* TDDPlayGroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24F2942119FE9700D6815C /* TDDPlayGroundTests.swift */; };
 		9F24F2A02119FE9700D6815C /* TDDPlayGroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24F29F2119FE9700D6815C /* TDDPlayGroundUITests.swift */; };
+		9F24F2AE211A008700D6815C /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24F2AD211A008700D6815C /* TestObject.swift */; };
+		9F24F2B0211A009E00D6815C /* TestObjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24F2AF211A009E00D6815C /* TestObjectSpec.swift */; };
+		B7B8D032A61B772C25FA3BF6 /* Pods_TDDPlayGroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB4589B209C8F0FFD190F66 /* Pods_TDDPlayGroundTests.framework */; };
+		F25552CCA9DB7FB744B547B9 /* Pods_TDDPlayGround.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4505CDE75BB36C4AF01947A8 /* Pods_TDDPlayGround.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02FB0CB0D5DA9387F6EEDB60 /* Pods-TDDPlayGround.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDPlayGround.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDPlayGround/Pods-TDDPlayGround.release.xcconfig"; sourceTree = "<group>"; };
+		44BAE30D786410CBD5A76700 /* Pods-TDDPlayGround.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDPlayGround.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDDPlayGround/Pods-TDDPlayGround.debug.xcconfig"; sourceTree = "<group>"; };
+		4505CDE75BB36C4AF01947A8 /* Pods_TDDPlayGround.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDDPlayGround.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB4589B209C8F0FFD190F66 /* Pods_TDDPlayGroundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TDDPlayGroundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F24F27C2119FE9600D6815C /* TDDPlayGround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDPlayGround.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F24F27F2119FE9600D6815C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F24F2812119FE9600D6815C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		9F24F29B2119FE9700D6815C /* TDDPlayGroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDPlayGroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F24F29F2119FE9700D6815C /* TDDPlayGroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDPlayGroundUITests.swift; sourceTree = "<group>"; };
 		9F24F2A12119FE9700D6815C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F24F2AD211A008700D6815C /* TestObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
+		9F24F2AF211A009E00D6815C /* TestObjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestObjectSpec.swift; sourceTree = "<group>"; };
+		A4B7836F2F48A031C53E2958 /* Pods-TDDPlayGroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDPlayGroundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDPlayGroundTests/Pods-TDDPlayGroundTests.release.xcconfig"; sourceTree = "<group>"; };
+		E6E74869D45EAA49F647D180 /* Pods-TDDPlayGroundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDPlayGroundTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TDDPlayGroundTests/Pods-TDDPlayGroundTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25552CCA9DB7FB744B547B9 /* Pods_TDDPlayGround.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7B8D032A61B772C25FA3BF6 /* Pods_TDDPlayGroundTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92AC0E9C2FD1483FD542AE69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4505CDE75BB36C4AF01947A8 /* Pods_TDDPlayGround.framework */,
+				6AB4589B209C8F0FFD190F66 /* Pods_TDDPlayGroundTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F24F2732119FE9600D6815C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +104,8 @@
 				9F24F2932119FE9700D6815C /* TDDPlayGroundTests */,
 				9F24F29E2119FE9700D6815C /* TDDPlayGroundUITests */,
 				9F24F27D2119FE9600D6815C /* Products */,
+				BC3891ACC86430D4A96C9180 /* Pods */,
+				92AC0E9C2FD1483FD542AE69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +122,7 @@
 		9F24F27E2119FE9600D6815C /* TDDPlayGround */ = {
 			isa = PBXGroup;
 			children = (
+				9F24F2AD211A008700D6815C /* TestObject.swift */,
 				9F24F27F2119FE9600D6815C /* AppDelegate.swift */,
 				9F24F2812119FE9600D6815C /* ViewController.swift */,
 				9F24F2832119FE9600D6815C /* Main.storyboard */,
@@ -111,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				9F24F2942119FE9700D6815C /* TDDPlayGroundTests.swift */,
+				9F24F2AF211A009E00D6815C /* TestObjectSpec.swift */,
 				9F24F2962119FE9700D6815C /* Info.plist */,
 			);
 			path = TDDPlayGroundTests;
@@ -125,6 +152,17 @@
 			path = TDDPlayGroundUITests;
 			sourceTree = "<group>";
 		};
+		BC3891ACC86430D4A96C9180 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44BAE30D786410CBD5A76700 /* Pods-TDDPlayGround.debug.xcconfig */,
+				02FB0CB0D5DA9387F6EEDB60 /* Pods-TDDPlayGround.release.xcconfig */,
+				E6E74869D45EAA49F647D180 /* Pods-TDDPlayGroundTests.debug.xcconfig */,
+				A4B7836F2F48A031C53E2958 /* Pods-TDDPlayGroundTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +170,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F24F2A42119FE9700D6815C /* Build configuration list for PBXNativeTarget "TDDPlayGround" */;
 			buildPhases = (
+				9E2AD50A27D0B201A256D723 /* [CP] Check Pods Manifest.lock */,
 				9F24F2782119FE9600D6815C /* Sources */,
 				9F24F2792119FE9600D6815C /* Frameworks */,
 				9F24F27A2119FE9600D6815C /* Resources */,
@@ -149,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F24F2A72119FE9700D6815C /* Build configuration list for PBXNativeTarget "TDDPlayGroundTests" */;
 			buildPhases = (
+				10541B44B19B7A0629E7AFE6 /* [CP] Check Pods Manifest.lock */,
 				9F24F28C2119FE9700D6815C /* Sources */,
 				9F24F28D2119FE9700D6815C /* Frameworks */,
 				9F24F28E2119FE9700D6815C /* Resources */,
+				8DA4F1044870B59ED21DD6FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,11 +292,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10541B44B19B7A0629E7AFE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TDDPlayGroundTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DA4F1044870B59ED21DD6FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TDDPlayGroundTests/Pods-TDDPlayGroundTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TDDPlayGroundTests/Pods-TDDPlayGroundTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E2AD50A27D0B201A256D723 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TDDPlayGround-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F24F2782119FE9600D6815C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F24F2AE211A008700D6815C /* TestObject.swift in Sources */,
 				9F24F2822119FE9600D6815C /* ViewController.swift in Sources */,
 				9F24F2802119FE9600D6815C /* AppDelegate.swift in Sources */,
 			);
@@ -266,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F24F2952119FE9700D6815C /* TDDPlayGroundTests.swift in Sources */,
+				9F24F2B0211A009E00D6815C /* TestObjectSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +417,7 @@
 		9F24F2A22119FE9700D6815C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -376,6 +479,7 @@
 		9F24F2A32119FE9700D6815C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -430,7 +534,9 @@
 		};
 		9F24F2A52119FE9700D6815C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BAE30D786410CBD5A76700 /* Pods-TDDPlayGround.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W9YJQYCY2W;
@@ -448,7 +554,9 @@
 		};
 		9F24F2A62119FE9700D6815C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02FB0CB0D5DA9387F6EEDB60 /* Pods-TDDPlayGround.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W9YJQYCY2W;
@@ -466,6 +574,7 @@
 		};
 		9F24F2A82119FE9700D6815C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6E74869D45EAA49F647D180 /* Pods-TDDPlayGroundTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +596,7 @@
 		};
 		9F24F2A92119FE9700D6815C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4B7836F2F48A031C53E2958 /* Pods-TDDPlayGroundTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
