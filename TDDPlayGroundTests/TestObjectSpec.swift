@@ -19,7 +19,7 @@ class TestObjectSpec: QuickSpec {
 			self.secondNumber = nil
 		}
 
-		describe("When I use whatIsMyNumber, I will put two numbers into the function")  {
+		describe("When I use whatIsMyNumber")  {
 
 			it("should be nil if one of the numbers is a nil value") {
 
@@ -127,7 +127,8 @@ class TestObjectSpec: QuickSpec {
 				self.firstNumber = 3
 				self.secondNumber = 4
 
-				guard let addNumbersUtility = addNumbersUtility else {
+				guard let addNumbersUtility = addNumbersUtility
+					else {
 				
 					fail("This should have never happend if the test before this passed")
 					return
@@ -141,22 +142,55 @@ class TestObjectSpec: QuickSpec {
 		
 		describe("when I instatiate a new object from the createLocationOffsetUtility") {
 			
-			let createLocationOffsetUtility =  self.testObject?.createLocationOffsetUtility(offSet: 3.14)
+			var createLocationOffsetUtility: MyLocationWithOffset?
+			let offset: Float = 3.14
+			
+			beforeEach {
+				
+				createLocationOffsetUtility = self.testObject?.createLocationOffsetUtility(offset: offset)
+			}
+			
+			it("should not be nil") {
+				
+				expect(createLocationOffsetUtility).toNot(beNil())
+			}
 			
 			it("should return the correct Location Object with the correct offset values for X and Y when used") {
 				
 				let x: Float = 2
 				let y: Float = 3
 				
-				if let createLocationOffsetUtility = createLocationOffsetUtility {
-					
-					let result = createLocationOffsetUtility(x, y, "My Location")
-					
-					expect(result != nil).to(beTrue())
-					expect(result?.x).to(equal(5.14))
-					expect(result?.y).to(equal(6.14))
-					expect(result?.locationName).to(equal("My Location"))
+				guard let createLocationOffsetUtility = createLocationOffsetUtility,
+				let result = createLocationOffsetUtility(x, y, "My Location") else {
+					fail("This should have never happend if the test before this passed")
+					return
 				}
+				
+				let expectedX = x + offset
+				let expectedY = y + offset
+
+				expect(result.x).to(equal(expectedX))
+				expect(result.y).to(equal(expectedY))
+				expect(result.locationName).to(equal("My Location"))
+			}
+			
+			it("should return me other values with the same offset") {
+				
+				let x: Float = 6
+				let y: Float = 1
+				
+				guard let createLocationOffsetUtility = createLocationOffsetUtility,
+					let result = createLocationOffsetUtility(x, y, "Pizza Pizza") else {
+						fail("This should have never happend if the test before this passed")
+						return
+				}
+				
+				let expectedX = x + offset
+				let expectedY = y + offset
+				
+				expect(result.x).to(equal(expectedX))
+				expect(result.y).to(equal(expectedY))
+				expect(result.locationName).to(equal("Pizza Pizza"))
 			}
 		}
 	}

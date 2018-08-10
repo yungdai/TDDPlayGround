@@ -12,7 +12,6 @@
 		9F24F2852119FE9600D6815C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F24F2832119FE9600D6815C /* Main.storyboard */; };
 		9F24F2872119FE9700D6815C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F24F2862119FE9700D6815C /* Assets.xcassets */; };
 		9F24F28A2119FE9700D6815C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F24F2882119FE9700D6815C /* LaunchScreen.storyboard */; };
-		9F24F2A02119FE9700D6815C /* TDDPlayGroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24F29F2119FE9700D6815C /* TDDPlayGroundUITests.swift */; };
 		9F24F2AE211A008700D6815C /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24F2AD211A008700D6815C /* TestObject.swift */; };
 		9F24F2B0211A009E00D6815C /* TestObjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24F2AF211A009E00D6815C /* TestObjectSpec.swift */; };
 		B7B8D032A61B772C25FA3BF6 /* Pods_TDDPlayGroundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB4589B209C8F0FFD190F66 /* Pods_TDDPlayGroundTests.framework */; };
@@ -21,13 +20,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		9F24F2912119FE9700D6815C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9F24F2742119FE9600D6815C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F24F27B2119FE9600D6815C;
-			remoteInfo = TDDPlayGround;
-		};
-		9F24F29C2119FE9700D6815C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9F24F2742119FE9600D6815C /* Project object */;
 			proxyType = 1;
@@ -50,9 +42,6 @@
 		9F24F28B2119FE9700D6815C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F24F2902119FE9700D6815C /* TDDPlayGroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDPlayGroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F24F2962119FE9700D6815C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F24F29B2119FE9700D6815C /* TDDPlayGroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDPlayGroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F24F29F2119FE9700D6815C /* TDDPlayGroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDPlayGroundUITests.swift; sourceTree = "<group>"; };
-		9F24F2A12119FE9700D6815C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F24F2AD211A008700D6815C /* TestObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
 		9F24F2AF211A009E00D6815C /* TestObjectSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestObjectSpec.swift; sourceTree = "<group>"; };
 		A4B7836F2F48A031C53E2958 /* Pods-TDDPlayGroundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDPlayGroundTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TDDPlayGroundTests/Pods-TDDPlayGroundTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,13 +65,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F24F2982119FE9700D6815C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -100,7 +82,6 @@
 			children = (
 				9F24F27E2119FE9600D6815C /* TDDPlayGround */,
 				9F24F2932119FE9700D6815C /* TDDPlayGroundTests */,
-				9F24F29E2119FE9700D6815C /* TDDPlayGroundUITests */,
 				9F24F27D2119FE9600D6815C /* Products */,
 				BC3891ACC86430D4A96C9180 /* Pods */,
 				92AC0E9C2FD1483FD542AE69 /* Frameworks */,
@@ -112,7 +93,6 @@
 			children = (
 				9F24F27C2119FE9600D6815C /* TDDPlayGround.app */,
 				9F24F2902119FE9700D6815C /* TDDPlayGroundTests.xctest */,
-				9F24F29B2119FE9700D6815C /* TDDPlayGroundUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,15 +118,6 @@
 				9F24F2962119FE9700D6815C /* Info.plist */,
 			);
 			path = TDDPlayGroundTests;
-			sourceTree = "<group>";
-		};
-		9F24F29E2119FE9700D6815C /* TDDPlayGroundUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9F24F29F2119FE9700D6815C /* TDDPlayGroundUITests.swift */,
-				9F24F2A12119FE9700D6815C /* Info.plist */,
-			);
-			path = TDDPlayGroundUITests;
 			sourceTree = "<group>";
 		};
 		BC3891ACC86430D4A96C9180 /* Pods */ = {
@@ -201,24 +172,6 @@
 			productReference = 9F24F2902119FE9700D6815C /* TDDPlayGroundTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9F24F29A2119FE9700D6815C /* TDDPlayGroundUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9F24F2AA2119FE9700D6815C /* Build configuration list for PBXNativeTarget "TDDPlayGroundUITests" */;
-			buildPhases = (
-				9F24F2972119FE9700D6815C /* Sources */,
-				9F24F2982119FE9700D6815C /* Frameworks */,
-				9F24F2992119FE9700D6815C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9F24F29D2119FE9700D6815C /* PBXTargetDependency */,
-			);
-			name = TDDPlayGroundUITests;
-			productName = TDDPlayGroundUITests;
-			productReference = 9F24F29B2119FE9700D6815C /* TDDPlayGroundUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,10 +186,6 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					9F24F28F2119FE9700D6815C = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 9F24F27B2119FE9600D6815C;
-					};
-					9F24F29A2119FE9700D6815C = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 9F24F27B2119FE9600D6815C;
 					};
@@ -257,7 +206,6 @@
 			targets = (
 				9F24F27B2119FE9600D6815C /* TDDPlayGround */,
 				9F24F28F2119FE9700D6815C /* TDDPlayGroundTests */,
-				9F24F29A2119FE9700D6815C /* TDDPlayGroundUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -274,13 +222,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9F24F28E2119FE9700D6815C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F24F2992119FE9700D6815C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -367,14 +308,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F24F2972119FE9700D6815C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F24F2A02119FE9700D6815C /* TDDPlayGroundUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -382,11 +315,6 @@
 			isa = PBXTargetDependency;
 			target = 9F24F27B2119FE9600D6815C /* TDDPlayGround */;
 			targetProxy = 9F24F2912119FE9700D6815C /* PBXContainerItemProxy */;
-		};
-		9F24F29D2119FE9700D6815C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9F24F27B2119FE9600D6815C /* TDDPlayGround */;
-			targetProxy = 9F24F29C2119FE9700D6815C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -612,46 +540,6 @@
 			};
 			name = Release;
 		};
-		9F24F2AB2119FE9700D6815C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W9YJQYCY2W;
-				INFOPLIST_FILE = TDDPlayGroundUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yungdai.TDDPlayGroundUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TDDPlayGround;
-			};
-			name = Debug;
-		};
-		9F24F2AC2119FE9700D6815C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W9YJQYCY2W;
-				INFOPLIST_FILE = TDDPlayGroundUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yungdai.TDDPlayGroundUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TDDPlayGround;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -678,15 +566,6 @@
 			buildConfigurations = (
 				9F24F2A82119FE9700D6815C /* Debug */,
 				9F24F2A92119FE9700D6815C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9F24F2AA2119FE9700D6815C /* Build configuration list for PBXNativeTarget "TDDPlayGroundUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F24F2AB2119FE9700D6815C /* Debug */,
-				9F24F2AC2119FE9700D6815C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

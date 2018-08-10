@@ -44,6 +44,8 @@ public struct Location: Codable {
 	let locationName: String
 }
 
+public typealias MyLocationWithOffset = ((Float?, Float?, String?) -> Location?)
+
 struct TestObject {
 	
 	var swiftEnum: SwiftEnum = .none
@@ -94,11 +96,15 @@ struct TestObject {
 	}
 
 	// Example of a type of code that shouldn't require delegation in the future
-	func createLocationOffsetUtility(offSet: Float) -> ((_ x: Float,_ y: Float, _ locationName:  String) -> Location?) {
+	func createLocationOffsetUtility(offset: Float) -> MyLocationWithOffset {
 		
-		func processLocation(x: Float, y: Float, locationName: String) -> (Location) {
+		func processLocation(x: Float?, y: Float?, locationName: String?) -> (Location?) {
 			
-			return (Location(x: x + offSet, y: y + offSet, locationName: locationName))
+			guard let x = x,
+				let y = y,
+				let locationName = locationName else { return (nil) }
+			
+			return (Location(x: x + offset, y: y + offset, locationName: locationName))
 		}
 		
 		return processLocation
