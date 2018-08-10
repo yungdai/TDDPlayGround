@@ -12,7 +12,6 @@
 		9F24F2852119FE9600D6815C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F24F2832119FE9600D6815C /* Main.storyboard */; };
 		9F24F2872119FE9700D6815C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F24F2862119FE9700D6815C /* Assets.xcassets */; };
 		9F24F28A2119FE9700D6815C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F24F2882119FE9700D6815C /* LaunchScreen.storyboard */; };
-		9F24F2952119FE9700D6815C /* TDDPlayGroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24F2942119FE9700D6815C /* TDDPlayGroundTests.swift */; };
 		9F24F2A02119FE9700D6815C /* TDDPlayGroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24F29F2119FE9700D6815C /* TDDPlayGroundUITests.swift */; };
 		9F24F2AE211A008700D6815C /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24F2AD211A008700D6815C /* TestObject.swift */; };
 		9F24F2B0211A009E00D6815C /* TestObjectSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F24F2AF211A009E00D6815C /* TestObjectSpec.swift */; };
@@ -50,7 +49,6 @@
 		9F24F2892119FE9700D6815C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F24F28B2119FE9700D6815C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F24F2902119FE9700D6815C /* TDDPlayGroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDPlayGroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F24F2942119FE9700D6815C /* TDDPlayGroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDPlayGroundTests.swift; sourceTree = "<group>"; };
 		9F24F2962119FE9700D6815C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F24F29B2119FE9700D6815C /* TDDPlayGroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDPlayGroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F24F29F2119FE9700D6815C /* TDDPlayGroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDPlayGroundUITests.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 		9F24F2932119FE9700D6815C /* TDDPlayGroundTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F24F2942119FE9700D6815C /* TDDPlayGroundTests.swift */,
 				9F24F2AF211A009E00D6815C /* TestObjectSpec.swift */,
 				9F24F2962119FE9700D6815C /* Info.plist */,
 			);
@@ -366,7 +363,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F24F2952119FE9700D6815C /* TDDPlayGroundTests.swift in Sources */,
 				9F24F2B0211A009E00D6815C /* TestObjectSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

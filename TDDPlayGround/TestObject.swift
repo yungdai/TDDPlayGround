@@ -37,15 +37,24 @@ extension SwiftEnum: Equatable {
 	}
 }
 
+public struct Location: Codable {
+	
+	let x: Float
+	let y: Float
+	let locationName: String
+}
 
 struct TestObject {
 	
 	var swiftEnum: SwiftEnum = .none
+	
 
-	func addTwoNumbers(numberOne: Int?, numberTwo: Int?) -> Int {
+
+	func addTwoNumbers(numberOne: Int?, numberTwo: Int?) -> Int? {
 		
 		guard let numberOne = numberOne,
-			let numberTwo = numberTwo else { return 0 }
+			let numberTwo = numberTwo else { return nil }
+		
 		return numberOne + numberTwo
 	}
 	
@@ -59,6 +68,42 @@ struct TestObject {
 		
 		return view
 	}
+	
+	// MARK: Closure style functions
+	func closureAddTwoNumbers(numberOne: Int?, numberTwo: Int?, answer closure: (Int?) -> Void) {
+		
+		
+		guard let numberOne = numberOne,
+			let numberTwo = numberTwo else { return closure(nil) }
+		
+		return closure(numberOne + numberTwo)
+	}
+	
+	
+	func functionalAddTwoNumbersUtilitity() -> ((Int?, Int?) -> Int?) {
+		
+		func additionProcess(numberOne: Int?, numberTwo: Int?) -> (Int?) {
+			
+			guard let numberOne = numberOne,
+				let numberTwo = numberTwo else { return (nil) }
+			
+			return (numberOne + numberTwo)
+		}
+		
+		return additionProcess
+	}
+
+	// Example of a type of code that shouldn't require delegation in the future
+	func createLocationOffsetUtility(offSet: Float) -> ((_ x: Float,_ y: Float, _ locationName:  String) -> Location?) {
+		
+		func processLocation(x: Float, y: Float, locationName: String) -> (Location) {
+			
+			return (Location(x: x + offSet, y: y + offSet, locationName: locationName))
+		}
+		
+		return processLocation
+	}
 }
+
 
 
