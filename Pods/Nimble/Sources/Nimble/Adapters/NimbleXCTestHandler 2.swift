@@ -72,7 +72,7 @@ func isXCTestAvailable() -> Bool {
 #endif
 }
 
-public func recordFailure(_ message: String, location: SourceLocation) {
+private func recordFailure(_ message: String, location: SourceLocation) {
 #if SWIFT_PACKAGE
     XCTFail("\(message)", file: location.file, line: location.line)
 #else

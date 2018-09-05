@@ -32,7 +32,7 @@ extension SwiftEnum: Equatable {
 			return (firstNumber1, secondNumber1) == (firstNumber2, secondNumber2)
 			
 		default:
-			return false
+			return (lhs == rhs) ? true : false
 		}
 	}
 }
